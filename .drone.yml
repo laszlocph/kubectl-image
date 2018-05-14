@@ -1,8 +1,0 @@
-pipeline:
-  docker:
-    image: plugins/docker
-    repo: laszlocloud/kubectl
-    tags:
-      - latest
-      - "1.9.2"
-    secrets: [ docker_username, docker_password ]
