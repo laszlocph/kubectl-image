@@ -1,0 +1,6 @@
+pipeline:
+  test:
+    image: laszlocloud/kubectl:1.9.2
+    commands:
+      - echo "hello"
+      - kubectl
