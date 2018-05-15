@@ -13,3 +13,4 @@ install:
 
 script:
   - ./test.sh
+  - ./push-image.sh
