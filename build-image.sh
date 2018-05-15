@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build --build-arg ver=$VERSION -t laszlocloud/kubectl:$VERSION .
-docker push laszlocloud/kubectl:$VERSION
+docker build --build-arg ver=$KUBECTL_VERSION -t laszlocloud/kubectl:$KUBECTL_VERSION-$BUILD .
+# docker push laszlocloud/kubectl:$KUBECTL_VERSION-$BUILD

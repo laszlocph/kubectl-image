@@ -1,4 +1,8 @@
 language: generic
+env:
+  - KUBECTL_VERSION=1.9.2 BUILD=1
+  - KUBECTL_VERSION=1.10.2 BUILD=1
+
 services:
   - docker
 
