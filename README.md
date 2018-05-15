@@ -1,2 +1,1 @@
 # kubectl-image
-
