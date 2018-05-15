@@ -9,4 +9,6 @@ if [ "$DISTRO" == "alpine" ]; then
 fi
 
 docker build --build-arg ver=$KUBECTL_VERSION -t laszlocloud/kubectl:$TAG -f $DOCKERFILE .
-# docker push laszlocloud/kubectl:$TAG
+
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+#docker push laszlocloud/kubectl:$TAG
