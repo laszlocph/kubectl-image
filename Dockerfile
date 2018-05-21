@@ -12,7 +12,7 @@ RUN apt-get update \
 
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v$VERSION/bin/linux/amd64/kubectl
 RUN chmod +x ./kubectl
-RUN mv ./kubectl /usr/local/bin/kubectl
 
-COPY entrypoint.sh .
-RUN chmod +x entrypoint.sh
+RUN mkdir ~/.kube
+COPY kubectl /usr/local/bin/kubectl
+RUN chmod +x /usr/local/bin/kubectl

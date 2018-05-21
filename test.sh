@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TAG=$KUBECTL_VERSION-build$BUILD
+TAG=$KUBECTL_VERSION-$BUILD
 
 if [ "$DISTRO" == "alpine" ]; then
   TAG=$TAG-alpine
